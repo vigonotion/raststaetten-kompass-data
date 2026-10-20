@@ -1,0 +1,781 @@
+[
+  {
+    "id": "burger-king",
+    "displayName": "Burger King",
+    "category": "food",
+    "match": {
+      "brand": [
+        "Burger King"
+      ],
+      "name": [
+        "Burger King"
+      ]
+    },
+    "simpleIconsSlug": "burgerking"
+  },
+  {
+    "id": "mcdonalds",
+    "displayName": "McDonald's",
+    "category": "food",
+    "match": {
+      "brand": [
+        "McDonald's"
+      ],
+      "name": [
+        "McDonald's",
+        "McDonalds"
+      ]
+    },
+    "simpleIconsSlug": "mcdonalds"
+  },
+  {
+    "id": "kfc",
+    "displayName": "KFC",
+    "category": "food",
+    "match": {
+      "brand": [
+        "KFC"
+      ],
+      "name": [
+        "KFC",
+        "Kentucky Fried Chicken"
+      ]
+    },
+    "simpleIconsSlug": "kfc"
+  },
+  {
+    "id": "subway",
+    "displayName": "Subway",
+    "category": "food",
+    "match": {
+      "brand": [
+        "Subway"
+      ],
+      "name": [
+        "Subway"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "nordsee",
+    "displayName": "Nordsee",
+    "category": "food",
+    "match": {
+      "brand": [
+        "Nordsee"
+      ],
+      "name": [
+        "Nordsee"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "marche",
+    "displayName": "Marché",
+    "category": "food",
+    "match": {
+      "brand": [
+        "Marché",
+        "Marche"
+      ],
+      "name": [
+        "Marché"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "moevenpick",
+    "displayName": "Mövenpick",
+    "category": "food",
+    "match": {
+      "brand": [
+        "Mövenpick"
+      ],
+      "name": [
+        "Mövenpick"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "autogrill",
+    "displayName": "Autogrill",
+    "category": "food",
+    "match": {
+      "brand": [
+        "Autogrill"
+      ],
+      "name": [
+        "Autogrill"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "le-crobag",
+    "displayName": "Le Crobag",
+    "category": "food",
+    "match": {
+      "brand": [
+        "Le Crobag"
+      ],
+      "name": [
+        "Le Crobag"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "backwerk",
+    "displayName": "BackWerk",
+    "category": "food",
+    "match": {
+      "brand": [
+        "BackWerk"
+      ],
+      "name": [
+        "BackWerk"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "ditsch",
+    "displayName": "Ditsch",
+    "category": "food",
+    "match": {
+      "brand": [
+        "Ditsch"
+      ],
+      "name": [
+        "Ditsch"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "kamps",
+    "displayName": "Kamps",
+    "category": "food",
+    "match": {
+      "brand": [
+        "Kamps"
+      ],
+      "name": [
+        "Kamps"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "pizza-hut",
+    "displayName": "Pizza Hut",
+    "category": "food",
+    "match": {
+      "brand": [
+        "Pizza Hut"
+      ],
+      "name": [
+        "Pizza Hut"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "starbucks",
+    "displayName": "Starbucks",
+    "category": "coffee",
+    "match": {
+      "brand": [
+        "Starbucks"
+      ],
+      "name": [
+        "Starbucks"
+      ]
+    },
+    "simpleIconsSlug": "starbucks"
+  },
+  {
+    "id": "tim-hortons",
+    "displayName": "Tim Hortons",
+    "category": "coffee",
+    "match": {
+      "brand": [
+        "Tim Hortons"
+      ],
+      "name": [
+        "Tim Hortons"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "lavazza",
+    "displayName": "Lavazza",
+    "category": "coffee",
+    "match": {
+      "brand": [
+        "Lavazza"
+      ],
+      "name": [
+        "Lavazza"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "segafredo",
+    "displayName": "Segafredo",
+    "category": "coffee",
+    "match": {
+      "brand": [
+        "Segafredo",
+        "Segafredo Zanetti"
+      ],
+      "name": [
+        "Segafredo"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "costa-coffee",
+    "displayName": "Costa Coffee",
+    "category": "coffee",
+    "match": {
+      "brand": [
+        "Costa Coffee",
+        "Costa"
+      ],
+      "name": [
+        "Costa Coffee"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "coffee-fellows",
+    "displayName": "Coffee Fellows",
+    "category": "coffee",
+    "match": {
+      "brand": [
+        "Coffee Fellows"
+      ],
+      "name": [
+        "Coffee Fellows"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "dunkin",
+    "displayName": "Dunkin'",
+    "category": "coffee",
+    "match": {
+      "brand": [
+        "Dunkin'",
+        "Dunkin' Donuts",
+        "Dunkin"
+      ],
+      "name": [
+        "Dunkin'",
+        "Dunkin Donuts"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "aral",
+    "displayName": "Aral",
+    "category": "fuel",
+    "match": {
+      "brand": [
+        "Aral"
+      ],
+      "name": [
+        "Aral"
+      ]
+    },
+    "simpleIconsSlug": "aral"
+  },
+  {
+    "id": "shell",
+    "displayName": "Shell",
+    "category": "fuel",
+    "match": {
+      "brand": [
+        "Shell"
+      ],
+      "name": [
+        "Shell"
+      ]
+    },
+    "simpleIconsSlug": "shell"
+  },
+  {
+    "id": "esso",
+    "displayName": "Esso",
+    "category": "fuel",
+    "match": {
+      "brand": [
+        "Esso"
+      ],
+      "name": [
+        "Esso"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "totalenergies",
+    "displayName": "TotalEnergies",
+    "category": "fuel",
+    "match": {
+      "brand": [
+        "TotalEnergies",
+        "Total"
+      ],
+      "name": [
+        "TotalEnergies"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "bp",
+    "displayName": "bp",
+    "category": "fuel",
+    "match": {
+      "brand": [
+        "BP",
+        "bp"
+      ],
+      "name": []
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "eni",
+    "displayName": "Eni",
+    "category": "fuel",
+    "match": {
+      "brand": [
+        "Eni",
+        "Agip",
+        "ENI"
+      ],
+      "name": [
+        "Agip",
+        "Eni"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "avia",
+    "displayName": "AVIA",
+    "category": "fuel",
+    "match": {
+      "brand": [
+        "AVIA",
+        "Avia"
+      ],
+      "name": [
+        "AVIA"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "jet",
+    "displayName": "JET",
+    "category": "fuel",
+    "match": {
+      "brand": [
+        "JET"
+      ],
+      "name": [
+        "JET"
+      ]
+    },
+    "simpleIconsSlug": "jet"
+  },
+  {
+    "id": "star",
+    "displayName": "star",
+    "category": "fuel",
+    "match": {
+      "brand": [
+        "Star",
+        "star"
+      ],
+      "name": []
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "hem",
+    "displayName": "HEM",
+    "category": "fuel",
+    "match": {
+      "brand": [
+        "HEM"
+      ],
+      "name": []
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "westfalen",
+    "displayName": "Westfalen",
+    "category": "fuel",
+    "match": {
+      "brand": [
+        "Westfalen"
+      ],
+      "name": []
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "omv",
+    "displayName": "OMV",
+    "category": "fuel",
+    "match": {
+      "brand": [
+        "OMV"
+      ],
+      "name": [
+        "OMV"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "orlen",
+    "displayName": "ORLEN",
+    "category": "fuel",
+    "match": {
+      "brand": [
+        "ORLEN",
+        "Orlen"
+      ],
+      "name": [
+        "ORLEN"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "q1",
+    "displayName": "Q1",
+    "category": "fuel",
+    "match": {
+      "brand": [
+        "Q1"
+      ],
+      "name": []
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "raiffeisen",
+    "displayName": "Raiffeisen",
+    "category": "fuel",
+    "match": {
+      "brand": [
+        "Raiffeisen"
+      ],
+      "name": []
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "tamoil",
+    "displayName": "Tamoil",
+    "category": "fuel",
+    "match": {
+      "brand": [
+        "Tamoil"
+      ],
+      "name": [
+        "Tamoil"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "circle-k",
+    "displayName": "Circle K",
+    "category": "fuel",
+    "match": {
+      "brand": [
+        "Circle K"
+      ],
+      "name": [
+        "Circle K"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "hoyer",
+    "displayName": "Hoyer",
+    "category": "fuel",
+    "match": {
+      "brand": [
+        "Hoyer"
+      ],
+      "name": [
+        "Hoyer"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "tesla-supercharger",
+    "displayName": "Tesla Supercharger",
+    "category": "charging",
+    "match": {
+      "brand": [
+        "Tesla Supercharger"
+      ],
+      "name": [
+        "Tesla Supercharger"
+      ]
+    },
+    "simpleIconsSlug": "tesla"
+  },
+  {
+    "id": "ionity",
+    "displayName": "IONITY",
+    "category": "charging",
+    "match": {
+      "brand": [
+        "IONITY",
+        "Ionity"
+      ],
+      "name": [
+        "IONITY"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "enbw",
+    "displayName": "EnBW",
+    "category": "charging",
+    "match": {
+      "brand": [
+        "EnBW",
+        "EnBW mobility+",
+        "EnBW HyperNetz"
+      ],
+      "name": [
+        "EnBW"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "fastned",
+    "displayName": "Fastned",
+    "category": "charging",
+    "match": {
+      "brand": [
+        "Fastned"
+      ],
+      "name": [
+        "Fastned"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "aral-pulse",
+    "displayName": "Aral pulse",
+    "category": "charging",
+    "match": {
+      "brand": [
+        "Aral pulse"
+      ],
+      "name": [
+        "Aral pulse"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "shell-recharge",
+    "displayName": "Shell Recharge",
+    "category": "charging",
+    "match": {
+      "brand": [
+        "Shell Recharge"
+      ],
+      "name": [
+        "Shell Recharge"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "ewe-go",
+    "displayName": "EWE Go",
+    "category": "charging",
+    "match": {
+      "brand": [
+        "EWE Go",
+        "EWE",
+        "EWE Go GmbH",
+        "EWEgo",
+        "EWE go"
+      ],
+      "name": [
+        "EWE Go",
+        "EWEgo"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "allego",
+    "displayName": "Allego",
+    "category": "charging",
+    "match": {
+      "brand": [
+        "Allego"
+      ],
+      "name": [
+        "Allego"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "eon-drive",
+    "displayName": "E.ON Drive",
+    "category": "charging",
+    "match": {
+      "brand": [
+        "E.ON Drive",
+        "E.ON",
+        "e-on",
+        "E-ON",
+        "EON",
+        "Innogy",
+        "innogy eMobility",
+        "E.ON Drive GmbH",
+        "E.ON Drive Infrastructure GmbH"
+      ],
+      "name": [
+        "E.ON Drive"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "rewe-to-go",
+    "displayName": "REWE To Go",
+    "category": "shop",
+    "match": {
+      "brand": [
+        "REWE To Go",
+        "REWE to go"
+      ],
+      "name": [
+        "REWE To Go"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "spar-express",
+    "displayName": "SPAR express",
+    "category": "shop",
+    "match": {
+      "brand": [
+        "SPAR express",
+        "Spar Express"
+      ],
+      "name": [
+        "SPAR express"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "edeka",
+    "displayName": "EDEKA",
+    "category": "shop",
+    "match": {
+      "brand": [
+        "EDEKA",
+        "Edeka"
+      ],
+      "name": [
+        "EDEKA"
+      ]
+    },
+    "simpleIconsSlug": "edeka"
+  },
+  {
+    "id": "sanifair",
+    "displayName": "SANIFAIR",
+    "category": "other",
+    "match": {
+      "brand": [
+        "SANIFAIR",
+        "Sanifair"
+      ],
+      "name": [
+        "SANIFAIR"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "serways",
+    "displayName": "Serways",
+    "category": "other",
+    "match": {
+      "brand": [
+        "Serways"
+      ],
+      "name": [
+        "Serways"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "euro-rastpark",
+    "displayName": "Euro Rastpark",
+    "category": "other",
+    "match": {
+      "brand": [
+        "Euro Rastpark"
+      ],
+      "name": [
+        "Euro Rastpark"
+      ]
+    },
+    "simpleIconsSlug": null
+  },
+  {
+    "id": "tank-und-rast",
+    "displayName": "Tank & Rast",
+    "category": "other",
+    "match": {
+      "brand": [
+        "Tank & Rast",
+        "Autobahn Tank & Rast"
+      ],
+      "name": []
+    },
+    "simpleIconsSlug": null
+  }
+]

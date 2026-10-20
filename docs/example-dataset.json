@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "dataVersion": "2026-10-19",
+  "generatedAt": "2026-10-19T03:00:00Z",
+  "source": "Hand-crafted example (fictional geometry), © OpenStreetMap contributors, ODbL",
+  "strands": [
+    {
+      "id": "A1-NO-0",
+      "ref": "A 1",
+      "towards": "NO",
+      "polyline": "io~dIq~b{@kb@ihAy`@gjAg_@glAq]anA}[yoAgZoqAoXcsAc[ypAu]enAa`@mkAkb@mhAsd@eeA",
+      "lengthKm": 12.002
+    },
+    {
+      "id": "A1-SW-0",
+      "ref": "A 1",
+      "towards": "SW",
+      "polyline": "ckjeIab`|@rd@beAhb@jhA~_@hkAr]`nA`[tpAnX`sAfZpqA~[|oAr]bnAf_@hlAx`@jjAlb@hhA",
+      "lengthKm": 12.0
+    },
+    {
+      "id": "A7-N-0",
+      "ref": "A 7",
+      "towards": "N",
+      "polyline": "_u|dIoyb{@ew@?gw@uCew@?ew@wCgw@?ew@uC",
+      "lengthKm": 6.004
+    }
+  ],
+  "junctions": [
+    {
+      "strandId": "A1-NO-0",
+      "km": 3.999,
+      "ref": "42",
+      "name": "Musterdorf"
+    },
+    {
+      "strandId": "A1-NO-0",
+      "km": 8.999,
+      "ref": "41",
+      "name": "Beispielstadt"
+    },
+    {
+      "strandId": "A1-SW-0",
+      "km": 2.998,
+      "ref": "41",
+      "name": "Beispielstadt"
+    },
+    {
+      "strandId": "A1-SW-0",
+      "km": 7.998,
+      "ref": "42",
+      "name": "Musterdorf"
+    },
+    {
+      "strandId": "A7-N-0",
+      "km": 2.001,
+      "ref": "5",
+      "name": "Testhausen"
+    },
+    {
+      "strandId": "A7-N-0",
+      "km": 4.003,
+      "ref": null,
+      "name": "Kreuz Beispiel"
+    }
+  ],
+  "facilities": [
+    {
+      "id": "osm-node-200001@A1-NO-0",
+      "kind": "autohof",
+      "name": "Autohof Musterdorf",
+      "strandId": "A1-NO-0",
+      "km": 3.999,
+      "lat": 53.43896,
+      "lon": 9.89067,
+      "exit": "42 Musterdorf",
+      "detourKm": 1.4,
+      "brands": [
+        "mcdonalds",
+        "totalenergies",
+        "ionity"
+      ],
+      "shower": true,
+      "fastCharger": true,
+      "open24h": true
+    },
+    {
+      "id": "osm-way-100002",
+      "kind": "rastanlage",
+      "name": "Raststätte Beispielheide Ost",
+      "strandId": "A1-NO-0",
+      "km": 6.998,
+      "lat": 53.44289,
+      "lon": 9.93975,
+      "exit": null,
+      "detourKm": 0,
+      "brands": [
+        "mcdonalds",
+        "shell",
+        "sanifair"
+      ],
+      "shower": true,
+      "fastCharger": false,
+      "open24h": true
+    },
+    {
+      "id": "osm-way-100001",
+      "kind": "rastanlage",
+      "name": "Raststätte Beispielheide West",
+      "strandId": "A1-SW-0",
+      "km": 4.995,
+      "lat": 53.44435,
+      "lon": 9.93842,
+      "exit": null,
+      "detourKm": 0,
+      "brands": [
+        "burger-king",
+        "starbucks",
+        "aral",
+        "tesla-supercharger",
+        "sanifair"
+      ],
+      "shower": true,
+      "fastCharger": true,
+      "open24h": true
+    },
+    {
+      "id": "osm-node-200001@A1-SW-0",
+      "kind": "autohof",
+      "name": "Autohof Musterdorf",
+      "strandId": "A1-SW-0",
+      "km": 7.998,
+      "lat": 53.43896,
+      "lon": 9.89067,
+      "exit": "42 Musterdorf",
+      "detourKm": 1.4,
+      "brands": [
+        "mcdonalds",
+        "totalenergies",
+        "ionity"
+      ],
+      "shower": true,
+      "fastCharger": true,
+      "open24h": true
+    },
+    {
+      "id": "osm-node-100003",
+      "kind": "rastanlage",
+      "name": null,
+      "strandId": "A1-SW-0",
+      "km": 9.999,
+      "lat": 53.42102,
+      "lon": 9.87383,
+      "exit": null,
+      "detourKm": 0,
+      "brands": [
+        "esso"
+      ],
+      "shower": false,
+      "fastCharger": false,
+      "open24h": false
+    },
+    {
+      "id": "osm-relation-300001",
+      "kind": "rastanlage",
+      "name": "Raststätte Testwald",
+      "strandId": "A7-N-0",
+      "km": 2.999,
+      "lat": 53.42696,
+      "lon": 9.85196,
+      "exit": null,
+      "detourKm": 0,
+      "brands": [
+        "nordsee",
+        "esso",
+        "enbw"
+      ],
+      "shower": false,
+      "fastCharger": true,
+      "open24h": false
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+[package]
+name = "rastpipe"
+version = "0.1.0"
+edition = "2021"
+description = "Offline OSM pipeline for Raststaetten-Kompass"
+license = "MIT"
+
+[[bin]]
+name = "rastpipe"
+path = "src/main.rs"
+
+[dependencies]
+osmpbf = "0.3"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+flate2 = "1"
+
+[profile.release]
+opt-level = 3

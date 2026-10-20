@@ -1,0 +1,12 @@
+# OSM extracts (large, downloaded by scripts/download-extract.sh)
+data/osm/
+
+# Rust
+pipeline/target/
+pipeline/out/
+
+# Release script output
+release/
+
+# macOS
+.DS_Store

@@ -1,0 +1,83 @@
+# Weekly dataset release (spec §6 phase 5, PLAN D-07, D-51).
+# Downloads the Germany extract, builds the dataset with --strict and publishes
+# dataset.json.gz, manifest.json, report.md and brands.json as a GitHub release tagged with the
+# dataset's dataVersion (= OSM extract date). Re-runs for the same extract are skipped.
+name: dataset
+
+on:
+  schedule:
+    - cron: "0 3 * * 1" # Monday 03:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dataset-release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Install Rust toolchain
+        run: |
+          rustup toolchain install stable --profile minimal
+          rustup default stable
+          rustc --version
+
+      - name: Download Germany extract (Geofabrik, MD5 checked)
+        run: scripts/download-extract.sh germany --yes-germany
+
+      - name: Build and verify release dataset
+        id: build
+        run: |
+          scripts/release-dataset.sh \
+            --input data/osm/germany-latest.osm.pbf \
+            --brands data/brands.json \
+            --repo "$GITHUB_REPOSITORY" \
+            --out release
+
+      - name: Check for an existing release
+        id: existing
+        env:
+          TAG: ${{ steps.build.outputs.tag }}
+        run: |
+          if [[ -z "$TAG" ]]; then
+            echo "release script did not report a tag" >&2
+            exit 1
+          fi
+          if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "Release $TAG already exists, nothing to publish."
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Publish release
+        if: steps.existing.outputs.exists == 'false'
+        env:
+          TAG: ${{ steps.build.outputs.tag }}
+        run: |
+          gh release create "$TAG" \
+            release/dataset.json.gz release/manifest.json release/report.md release/brands.json \
+            --repo "$GITHUB_REPOSITORY" \
+            --target "$GITHUB_SHA" \
+            --title "Datensatz $TAG" \
+            --notes-file release/release-notes.md \
+            --latest
+
+      - name: Keep the report as a workflow artifact
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: dataset-report
+          path: |
+            release/report.md
+            release/release-notes.md
+          if-no-files-found: ignore
