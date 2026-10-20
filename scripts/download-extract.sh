@@ -42,6 +42,19 @@ md5_of() {
   else md5 -q "$1"; fi
 }
 
+# Geofabrik redirects `<region>-latest.osm.pbf` to mirrors that can lag a day behind, and for
+# `germany` no `-latest.osm.pbf.md5` exists any more. Resolve the newest dated file
+# (`<region>-YYMMDD.osm.pbf`) from the region's index page and download it together with its own
+# checksum from download.geofabrik.de, so file and checksum always belong together.
+index_url="${url%-latest.osm.pbf}.html"
+dated="$(curl -fsSL "$index_url" | grep -oE "href=\"$region-[0-9]{6}\.osm\.pbf\"" \
+  | sed -E 's/^href="(.*)"$/\1/' | LC_ALL=C sort -u | tail -n 1 || true)"
+if [[ -n "$dated" ]]; then
+  url="${url%/*}/$dated"
+else
+  echo "warning: no dated extract found on $index_url; using $url" >&2
+fi
+
 echo "Fetching checksum: $url.md5"
 curl -fsSL "$url.md5" -o "$md5_file"
 expected="$(cut -d' ' -f1 "$md5_file")"
